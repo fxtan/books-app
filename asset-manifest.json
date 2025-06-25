@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fxtan/books-app/static/css/main.19e4db7c.css",
-    "main.js": "/fxtan/books-app/static/js/main.ba2e858a.js",
-    "static/media/header-bg.jpeg": "/fxtan/books-app/static/media/header-bg.fa4ef5eb8992c5b7406c.jpeg",
-    "static/media/catGif.gif": "/fxtan/books-app/static/media/catGif.549586afcc0b2810ebaa.gif",
-    "static/media/bookLogo.png": "/fxtan/books-app/static/media/bookLogo.aa6d54eeea28015c2fa3.png",
-    "index.html": "/fxtan/books-app/index.html",
-    "main.19e4db7c.css.map": "/fxtan/books-app/static/css/main.19e4db7c.css.map",
-    "main.ba2e858a.js.map": "/fxtan/books-app/static/js/main.ba2e858a.js.map"
+    "main.css": "/books-app/static/css/main.c6ed66fa.css",
+    "main.js": "/books-app/static/js/main.065c0b65.js",
+    "static/media/header-bg.jpeg": "/books-app/static/media/header-bg.fa4ef5eb8992c5b7406c.jpeg",
+    "static/media/catGif.gif": "/books-app/static/media/catGif.549586afcc0b2810ebaa.gif",
+    "static/media/bookLogo.png": "/books-app/static/media/bookLogo.aa6d54eeea28015c2fa3.png",
+    "index.html": "/books-app/index.html",
+    "main.c6ed66fa.css.map": "/books-app/static/css/main.c6ed66fa.css.map",
+    "main.065c0b65.js.map": "/books-app/static/js/main.065c0b65.js.map"
   },
   "entrypoints": [
-    "static/css/main.19e4db7c.css",
-    "static/js/main.ba2e858a.js"
+    "static/css/main.c6ed66fa.css",
+    "static/js/main.065c0b65.js"
   ]
 }
