@@ -1,0 +1,191 @@
+body {
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+}
+
+p {
+  line-height: 25px;
+}
+
+.container {
+  max-width: 1530px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-image: url(../images/header-bg.jpeg);
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 60px;
+  background-size: cover;
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    padding-top: 10px;
+    overflow: visible;
+  }
+}
+
+.search__button {
+  padding: 5px;
+  background-color: #288a4f;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search__button:hover {
+  background-color: #1f6d3e;
+}
+
+.more__button {
+  background-color: #288a4f;
+  padding: 5px 30px;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto;
+}
+
+.more__button:hover {
+  background-color: #1f6d3e;
+}
+
+.search__input {
+  width: 700px;
+  padding: 4px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+
+@media(max-width: 920px) {
+  .search__input {
+    width: 500px;
+  }
+}
+
+@media(max-width: 643px) {
+  .search__input {
+    width: 400px;
+  }
+}
+
+.input__wrapper {
+  position: relative;
+}
+
+.icon-clear {
+  position: absolute;
+  background: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  top: 4px;
+  right: 67px;
+  max-width: 30px;
+  min-height: 12px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.white {
+  color: #fff;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  top: 32%;
+  left: 41%;
+  z-index: 1000;
+}
+
+@media(max-width: 375px) {
+  .center {
+    top: 307px;
+    left: 15%;
+  }
+}
+
+.error__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 220px;
+  left: 19%;
+  z-index: 1000;
+}
+
+.error__image {
+  width: 250px;
+  display: block;
+  margin-top: 6px;
+}
+
+.text__error {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 10px; /* добавлено для отступа */
+}
+
+a {
+  color: inherit;
+}
+
+.close {
+  margin: 20px;
+}
+
+.mt-300 {
+  margin-top: 300px;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.error__center {
+  width: 100%;
+  left: 0;
+}
+
+/* Логотип */
+.book__logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+}
+
+@media(max-width: 730px) {
+  .book__logo {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media(max-width: 560px) {
+  .book__logo {
+    top: 10px;
+    left: 10px;
+  }
+}

@@ -1,0 +1,126 @@
+.header {
+  padding-top: 40px;
+  position: relative;
+
+  @media (max-width: 380px) {
+    padding-top: 0;
+  }
+
+  .header__logo {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: lavenderblush;
+  }
+
+  .header__top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .input__wrapper {
+      .search__input {
+        @media (max-width: 512px) {
+          width: 250px;
+        }
+      }
+
+      .icon-clear {
+        background-position: top center;
+        background-size: cover;
+      }
+    }
+    .left {
+      position: absolute;
+      left: 0;
+      background-color: royalblue;
+      padding: 5px 30px;
+      border-radius: 10px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: block;
+      margin-right: 10px;
+      text-decoration: none;
+      &:hover {
+        background-color: rgb(48, 79, 173);
+      }
+    }
+  }
+
+  .header__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 400px;
+    position: relative;
+    z-index: 1;
+
+    .input__wrapper {
+      position: relative;
+
+      .icon-clear {
+        position: absolute;
+        background: transparent;
+        // background-image: url(../images/closeIcon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        top: 0;
+        max-width: 30px;
+        min-height: 12px;
+        right: 116px;
+        cursor: pointer;
+        z-index: 1000;
+
+        @media (max-width: 375px) {
+          top: 0px;
+          right: 85px;
+        }
+      }
+    }
+
+    @media (max-width: 667px) {
+      margin-top: 100px;
+    }
+
+    @media (max-width: 375px) {
+      margin-top: 200px;
+    }
+
+    input {
+      padding: 20px;
+      font-size: 20px;
+
+      @media (max-width: 1236px) {
+        padding: 10px;
+        width: 500px;
+      }
+
+      @media (max-width: 560px) {
+        width: 300px;
+      }
+
+      @media (max-width: 400px) {
+        width: 200px;
+        &::placeholder {
+          font-size: 15px;
+        }
+      }
+    }
+    button {
+      padding: 20px;
+      font-size: 20px;
+
+      @media (max-width: 1236px) {
+        padding: 10px;
+      }
+
+      @media (max-width: 400px) {
+        padding: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}

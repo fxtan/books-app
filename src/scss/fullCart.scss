@@ -1,0 +1,283 @@
+.cart__wrapper {
+  margin-top: 200px;
+  padding: 100px;
+  background-color: rgba(71, 67, 67, 0.6);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @media (max-width: 748px) {
+    padding: 70px 20px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+    margin-top: 120px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+ .close {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0; 
+  background-color: #288a4f;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close:hover {
+  background-color: red;
+}
+
+
+  .wrapper__button {
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .cart__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    height: 455px;
+
+    @media (max-width: 915px) {
+      height: 353px;
+    }
+
+    @media (max-width: 748px) {
+      margin-bottom: 10px;
+      height: 212px;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+      height: 210px;
+      padding: 0 10px;
+      background-color: inherit;
+    }
+
+    @media (max-width: 375px) {
+      position: absolute;
+      top: -110px;
+      left: 0;
+      width: 100%;
+      min-width: 300px;
+      height: 100%;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+
+    .cart__img {
+      border-radius: 10px;
+      max-width: 300px;
+      width: 230px;
+      height: 230px;
+      box-shadow: 0 0 5px;
+
+      @media (max-width: 915px) {
+        width: 150px;
+        height: 150px;
+      }
+      @media (max-width: 748px) {
+        width: 200px;
+        height: auto;
+        margin-right: 10px;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+        height: 180px;
+      }
+      @media (max-width: 375px) {
+        height: 150px;
+      }
+    }
+
+    .cart__info {
+      max-width: 230px;
+      width: 300px;
+      padding: 10px;
+      margin-top: 10px;
+      height: 100%;
+      border-radius: 10px;
+      background-color: #ccf1cc;
+      @media (max-width: 915px) {
+        width: 150px;
+        padding-bottom: 15px;
+      }
+      @media (max-width: 748px) {
+        width: 100%;
+        margin-top: 0;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+        height: 180px;
+      }
+      @media (max-width: 375px) {
+        width: 135px;
+        height: 150px;
+        position: relative;
+        margin-top: 0;
+      }
+    }
+
+    .cart__authors {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 5px;
+
+      @media (max-width: 915px) {
+        font-size: 12px;
+      }
+      @media (max-width: 480px) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      @media (max-width: 420px) {
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+
+    .cart__title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: black;
+      text-align: center;
+
+      @media (max-width: 915px) {
+        font-size: 10px;
+      }
+      @media (max-width: 480px) {
+        margin: 4px 0;
+        font-size: 16px;
+        line-height: 18px;
+      }
+      @media (max-width: 420px) {
+        font-size: 10px;
+        line-height: 10px;
+      }
+    }
+
+    .cart__subtitle {
+      font-size: 18px;
+    }
+
+    .wrapper__bottom-content {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .bottom__wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .cart__publishing,
+    .cart__published-date {
+      font-size: 8px;
+    }
+
+    .cart__country {
+      color: blue;
+      bottom: 8px;
+
+      @media (max-width: 915px) {
+        font-size: 10px;
+      }
+
+      @media (max-width: 375px) {
+        position: absolute;
+        bottom: 8px;
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .cart__right {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-width: 500px;
+    height: 455px;
+    background-color: #ccf1cc;
+    padding: 15px;
+    border-radius: 7px;
+    margin-left: 20px;
+
+    @media (max-width: 915px) {
+      height: 353px;
+    }
+
+    @media (max-width: 748px) {
+      height: 300px;
+      max-width: 100%;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @media (max-width: 375px) {
+      display: block;
+      position: absolute;
+      bottom: 66px;
+      left: 20px;
+      width: 293px;
+      height: 210px;
+    }
+
+    @media (max-width: 320px) {
+      width: 260px;
+    }
+
+    
+    &::-webkit-scrollbar {
+      width: 10px; 
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #ccf1cc; 
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #527852;
+      border-radius: 4px;
+      border: 2px solid #ccf1cc;
+    }
+
+    .text__right {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 23px;
+
+      @media (max-width: 915px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+}
